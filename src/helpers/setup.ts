@@ -55,7 +55,6 @@ export async function setupWebKeplr(config: Config): Promise<SigningCosmWasmClie
 
   // Init SigningCosmWasmClient client
   const signingClient = await SigningCosmWasmClient.connectWithSigner(config.rpcEndpoint, offlineSigner, {
-    prefix,
     gasPrice,
   });
 
@@ -78,7 +77,6 @@ export async function setupCosmostation(config: Config): Promise<SigningCosmWasm
 
   // Init SigningCosmWasmClient client
   const signingClient = await SigningCosmWasmClient.connectWithSigner(config.rpcEndpoint, offlineSigner, {
-    prefix,
     gasPrice,
   });
 
@@ -107,7 +105,6 @@ export async function setupWebLedger(config: Config, transport: any): Promise<Si
 
   // Init SigningCosmWasmClient client
   const client = await SigningCosmWasmClient.connectWithSigner(config.rpcEndpoint, offlineSigner, {
-    prefix,
     gasPrice,
   });
 
@@ -136,7 +133,6 @@ export async function setupNodeLocal(config: Config, mnemonic: string): Promise<
 
   // Init SigningCosmWasmClient client
   const client = await SigningCosmWasmClient.connectWithSigner(config.rpcEndpoint, offlineSigner, {
-    prefix,
     gasPrice,
   });
 
@@ -170,7 +166,6 @@ export async function setupNodeLedger(config: Config, transport: any): Promise<S
   });
 
   const client = await SigningCosmWasmClient.connectWithSigner(config.rpcEndpoint, offlineSigner, {
-    prefix: prefix,
     gasPrice: gasPrice,
   });
 

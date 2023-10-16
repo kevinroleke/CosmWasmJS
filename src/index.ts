@@ -75,7 +75,6 @@ export {
 // @cosmjs/crypto
 export { Bip39, HdPath, pathToString, Random } from "@cosmjs/crypto";
 export {
-  Bech32,
   fromAscii,
   fromBase64,
   fromBech32,
